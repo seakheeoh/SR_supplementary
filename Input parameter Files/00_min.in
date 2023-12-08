@@ -1,0 +1,13 @@
+ &cntrl
+ imin = 1,
+ maxcyc = 4000, ncyc = 2000, ntmin = 1,
+ ntpr = 50,
+ ntx = 1, irest = 0,
+ ntb = 1,
+ ntc=1,ntf=1,jfastw=4,
+ ntr = 1,
+ cut = 9.0,
+/
+ &ewald
+ ew_type = 0, skinnb = 1.0,
+/

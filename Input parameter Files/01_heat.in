@@ -1,0 +1,18 @@
+Heating the system with 15 kcal/mol,restraints on Backbone, V=const
+ &cntrl
+ imin=0, ntx=1, irest=0,
+ nstlim=50000, dt=0.002,
+ ntf=1, ntc=2,
+ ntwr=500, ntwx=500, ntwe=500, ntpr=500,
+  ntb=2, ntp=1, pres0=1.0, taup=2.0,
+
+ tempi=100.0, temp0=TTT,
+ ntr=1,nmropt=1,
+ restraintmask=':1-NNN@N,CA,C,O',
+ restraint_wt=15.0,
+ cut=9.0,
+ ig=-1,
+/
+&wt type='TEMP0',istep1=0,    istep2=5000,  value1=100.0,value2=TTT /
+&wt type='TEMP0',istep1=5001, istep2=50000, value1=TTT,value2=TTT /  
+&wt type='END' /

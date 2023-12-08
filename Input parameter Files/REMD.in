@@ -1,0 +1,21 @@
+ production 10ns
+ &cntrl
+    imin=0, ntx=5, irest=1,
+    nstlim=5000,   ! 5000 steps (10ps) , time interval to perfoerm  exchange attempts 
+    numexchg=1000, ! # of  exchange attempts (total simulations step = nstlim*numexchg=10ns)
+    dt=0.002,
+
+    ntpr=50000,     ! Print energies every 100ps
+    ntwx=50000,     ! Print coordinates every 100ps  to the trajectory
+    ntwr=500000,    ! Print a restart file every 1ns  (can be less frequent)
+    ntwe=50000,
+    nscm=1000,
+    ntf=2, ntc=2, temp0=TTT,
+    ntb=2, ntp=1, pres0=1.0, taup=2.0,
+    cut=9.0,
+    ntt=3, gamma_ln = 2.0,
+    ioutfm=1,
+/
+ &ewald
+    ew_type = 0, skinnb = 1.0 /
+
